@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 4</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El hombre se propuso construir un puente sobre un arroyo que transcurría por delante de su casa. Compró veinte mil ladrillos. Cuando recibió el pedido, percibió que todos los ladrillos no eran iguales. Le evidencia lo contrarió porque él era extremadamente detallista y hasta obsesivo con la similitud.
+                <br><br>
+                En su supina ignorancia sobre el tema, siempre había considerado que los ladrillos debían ser un calco uno de otro. Los examinó uno por uno, los sopesó, los midió, los lamió, hasta dar con aquel que, a su criterio, era el ladrillo perfecto. Entonces separó aquellos útiles que coincidían con sus estándares y desechó el resto, arrojándolos al arroyo dónde se hicieron añicos al estrellarse con las rocas del lecho. Solamente una cuarta parte de su compra resistió el análisis de calidad.
+                <br><br>
+                Ahora bien, cinco mil ladrillos no le bastaban para construir un puente. Por lo tanto, llamó al corralón para realizar un nuevo encargo. En primera instancia, planteó el reclamo sobre la falta de uniformidad de los implementos y declaró el pesar que eso le había causado. El empleado que lo atendió, muy amable, lo supo comprender y le comentó que trasladaría la queja al fabricante de ladrillos. Satisfecho, realizó otra compra por una cantidad similar a la primera.
+                <br><br>
+                Sabiendo que le esperaba, tomó su ladrillo molde y repitió la operación de testeo con los mismos resultados. El arroyo se llenó de cascotes. El hombre pensó que, teniendo en cuenta su reclamo, en la próxima compra seguramente llegarían los ladrillos perfectos.
+                <br><br>
+                Mientras tanto, a su alrededor crecía un muro de ladrillos inmaculados.
+                <br><br>
+                Llegó el nuevo envío y nada. Y otro más y nada. A esta altura, ya se había olvidado del puente que deseaba construir y las paredes se elevaban, rodeándolo, hacia el cielo. Esta obsesión, al cabo, no pasó desapercibida. Y pronto se hizo universal la búsqueda del ladrillo perfecto. Las caleras y los fabricantes no daban abasto de tantos pedidos de ladrillos. Cuando ya no hubo más ladrillos, el hombre se sentó a morir en su trono de ladrillos.
+                <br><br>
+                Cuando llegamos en nuestras naves dando inicio a la tercera oleada civilizatoria encontramos un páramo lleno de cascotes y osamentas. Y, aquí y allá, altísimas fortalezas de ladrillo. En su interior, cada una, tenía un trono de ladrillos y en él reposaba el esqueleto de un ser humano, testamente coronado por un perfecto ladrillo.
+            </p>
+                                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
